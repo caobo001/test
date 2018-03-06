@@ -1,0 +1,100 @@
+@import "variables.less";
+@import "proInfoTable.less";
+.blue-link {
+  color: #0084d7;
+}
+.blue-link:hover {
+  color: #00aaff;
+}
+.width1150 {
+  width: 1150px;
+  margin: auto;
+}
+.pro-info-block,
+.communicate-block {
+  padding: 30px 0px;
+  margin-top: 10px;
+  background-color: @color-white;
+}
+// communicate-block沟通内容
+.communicate-block .tips {
+  margin-left: 30px;
+}
+.communicate-block .content {
+  border: 1px solid @color-border;
+  padding: 40px 0px 40px 0px;
+}
+.msg-list-block,
+.send-area {
+    width: 998px;
+    margin: auto;
+}
+.msg-list-block {
+  height: 400px;
+  transition: height 1s;
+  overflow: hidden;
+}
+.msg-list li {
+  border-bottom: 1px dashed lighten(@color-border, 5%);
+  padding: 15px;
+  .media-left {
+    img {
+      max-width: 65px;
+      max-height: 65px;
+      border-radius: 50%;
+    }
+  }
+  .media-body {
+    width: 890px;
+    margin-top: 10px;
+  }
+}
+.att {
+  margin: 5px 0px;
+}
+.att a {
+  color: @color-link;
+  margin-right: 10px;
+}
+.msg {
+  margin-top: 3px;
+}
+.seller {
+  color: @color-hover;
+}
+.buyer {
+  color: #008aff;
+}
+.date {
+  color: #999999;
+}
+.send-area .toggle {
+  margin: 5px auto 15px auto;
+}
+.send-area .wrapper {
+  background-color: @color-bg;
+  padding: 30px 0px 65px 0px;
+  clear: both;
+  .btn-line {
+    width: 936px;
+    margin: auto;
+  }
+}
+
+.btn-line {
+  padding-top: 10px;
+}
+.upload-btn {
+  border: 1px solid #666666;
+  color: #666666;
+  border-radius: 15px;
+  font-size: 14px;
+}
+.submit-btn {
+  color: #ffffff;
+  background-color: #e71945;
+  font-size: 14px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 35px;
+}

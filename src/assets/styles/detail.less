@@ -1,0 +1,163 @@
+@import 'variables.less';
+/* 商品图文简介 pro-intro */
+.pro-intro-block {
+  background-color: @color-white;
+  padding: 50px 0px;
+  font-size: 14px;
+}
+.media {
+  width: 915px;
+  margin: auto;
+  .media-left {
+    display: inline-block;
+    width: 260px;
+    height: 260px;
+    margin-right: 60px;
+    img {
+      width: 260px;
+    }
+  }
+  .media-body {
+    .line {
+      padding: 5px 0px;
+    }
+    .key {
+      width: 95px;
+    }
+    .value {
+      width: 485px;
+    }
+  }
+}
+.key {
+  color: #999999;
+}
+.industry-type-list > li {
+	width: 90px;
+}
+.brief-intro {
+  word-break: break-all;
+  word-wrap: break-word;
+  transition: height 0.2s;
+  height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.brief-intro.show-more {
+  height: auto;
+  overflow:visible;
+  text-overflow: clip;
+  white-space: normal;
+}
+.more {
+  margin-right: 15px;
+}
+/* 案例 评论 case-comment-block */
+.case-comment-block {
+  margin-top: 10px;
+  font-size: 14px;
+  .wrapper {
+    width: 950px;
+    margin: auto;
+    .title-line {
+      padding: 10px 0px;
+      margin-top: 10px;
+    }
+    .content-line {
+      padding: 30px 0px 50px 0px;
+    }
+  }
+}
+.case-comment-block .line {
+  padding: 12px 0px;
+}
+.case-comment-block .key {
+  width: 100px;
+}
+.case-comment-block .value {
+  width: 845px;
+}
+.case .title-line {
+  border-bottom: 1px solid #e5e5e5;
+}
+.case-img {
+  max-width: 120px;
+  max-height: 95px;
+  margin-right: 10px;
+}
+.comment {
+  padding-bottom: 40px;
+}
+.comment .rate-panel {
+  background-color: @color-thead;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+.comment .first {
+  width: 195px;
+  .el-rate, p {
+    width: 126px;
+    margin: auto;
+  }
+  p {
+    margin-top: 35px;
+  }
+}
+.comment .second {
+  width: 275px;
+  div {
+    padding: 6px 0px;
+  }
+}
+.comment .third {
+  width: 460px;
+  .wrapper {
+    width: 390px;
+    margin: 10px auto;
+  }
+}
+.comment .first,
+.comment .second,
+.comment .third {
+  height: 118px;
+  position: relative;
+}
+.comment .first:after,
+.comment .second:after {
+  position: absolute;
+  content: "";
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  width: 1px;
+  height: 98px;
+  background-color: darken(@color-border, 5%)
+}
+.comment .label {
+  padding: 5px 8px;
+  border: 1px solid @color-border;
+  background-color: @color-white;
+  margin: auto 5px 5px auto;
+}
+.comment-list {
+  width: 860px;
+  margin: auto;
+  li {
+    border-bottom: 1px dashed lighten(@color-border, 5%);
+    padding: 30px 0px 35px 0px;
+    .item {
+      margin-bottom: 8px;
+    }
+    .date {
+      width: 225px;
+      .time {
+        color: #999999;
+      }
+    }
+    .amount {
+      width: 170px;
+    }
+  }
+}

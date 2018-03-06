@@ -1,0 +1,192 @@
+@import '../../assets/styles/variables.less';
+.page-media-order-list {
+  background-color: @color-bg;
+}
+.container {
+  .container-right {
+    width: @width-content-right;
+  }
+}
+
+.statistics-bar {
+  .item {
+    background-color: @color-white;
+    padding: 45px 0px;
+    .num.green {
+      color: #4bb902;
+    }
+    .num.dark-red {
+      color: #cd241b;
+    }
+    .name {
+      margin-top: 10px;
+    }
+  }
+}
+.filter-panel {
+  padding: 20px;
+  background-color: @color-white;
+  .search-bar {
+    width: 514px;
+    margin-right: 38px;
+    display: inline-block;
+    font-size: 0;
+    input {
+      width: 420px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 14px;
+      border-radius: 4px;
+      border: 1px solid @color-border;
+      padding: 0 15px;
+      float: left;
+    }
+    .el-button {
+      float: left;
+      margin-left: -1px;
+      height: 40px;
+      line-height: 40px;
+      padding: 0px 30px;
+      border-radius: 4px;
+      border-color: @color-border;
+      color: @color-font;
+      background-color: @color-white;
+      cursor: default;
+    }
+  }
+  .more {
+    display: inline-block;
+    margin-top: 9px;
+  }
+  .more .iconfont{
+    vertical-align: middle;
+    margin-left: 8px;
+    transition: all 0.4s;
+    &.up {
+      display: inline-block;
+      transform: rotate(180deg);
+    }
+  }
+}
+.search-url.el-input {
+  width: 224px;
+  .el-input__inner {
+    width: 224px;
+    height: 40px;
+  }
+}
+.more-condition {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.4s;
+}
+.more-condition.show {
+  height: 164px;
+}
+.more-condition .name {
+  font-size: 14px;
+  margin-right: 5px;
+}
+.condition-list {
+  margin-top: 16px;
+  li {
+    float: left;
+    width: 33.3%;
+    margin: 4px 0;
+    .datetime,
+    .el-select,
+    .el-input
+     {
+      vertical-align: middle;
+     }
+    .el-select {
+      width: 224px;
+      height: 36px;
+      .el-input__inner {
+        height: 40px;
+      }
+    }
+    .el-date-editor.el-input {
+      width: 100px;
+      .el-input__inner {
+        height: 40px;
+      }
+    }
+  }
+  .el-input-number.is-without-controls {
+     width: 100px;
+     vertical-align: middle;
+    .el-input__inner {
+     height: 40px;
+    }
+  }
+}
+.confirm-btn {
+  display: block;
+  width: 80px;
+  margin: 16px auto 0 auto;
+  padding: 10px 25px;
+  border-radius: 4px;
+}
+
+.order-list-block {
+  background-color: @color-white;
+  padding: 10px;
+  min-height: 550px;
+  margin-bottom: 36px;
+}
+.order-list-table {
+  width: 100%;
+  font-size: 14px;
+  thead {
+    background-color: @color-white;
+    border-bottom: 1px solid @color-border;
+    th {
+      text-align: center;
+      padding: 5px 0 10px 0;
+    }
+  }
+  tbody {
+    tr {
+      border-bottom: 1px solid @color-bg2;
+      td {
+        padding: 20px 0px;
+        vertical-align: top;
+        &.brief {
+          max-width: 270px;
+          width: 245px;
+          .media-body {
+            .ellipsis {
+              max-width: 8em;
+            }
+          }
+          .weibo {
+            .media-heading {
+              padding: 3px 0 8px 0;
+            }
+          }
+        }
+        &.price {
+          width: 200px;
+          padding-left: 40px;
+        }
+        &.status {
+          width: 130px;
+        }
+        &.operate {
+          width: 130px;
+        }
+      }
+    }
+  }
+}
+.media {
+  overflow: visible;
+}
+.icon-invoice {
+  color: @color-primary;
+}
+.radio {
+  display: block;
+  margin: 5px 15px;
+}

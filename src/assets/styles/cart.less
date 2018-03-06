@@ -1,0 +1,120 @@
+@import './variables.less';
+.page-media-cart {
+  padding: 0 0 100px 0;
+}
+
+.tabs {
+  border-bottom: 1px solid @color-border;
+  li {
+    display: inline-block;
+    padding: 12px 0;
+    margin-right: 75px;
+    font-size: 16px;
+    cursor: pointer;
+    &.active {
+      color: @color-primary;
+      border-bottom: 2px solid @color-primary;
+    }
+  }
+}
+.specifications {
+  ul {
+    width: 185px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .label {
+    margin: 0 10px 0 17px;
+  }
+}
+.goods-list {
+  .brief {
+    width: 300px;
+    .goods-info {
+      width: 230px;
+    }
+    .media-heading {
+      margin: 5px 0 8px 0 !important;
+      .name {
+        display: inline-block;
+        max-width: 9em;
+        vertical-align: top;
+      }
+    }
+    .desc {
+      display: inline-block;
+      max-width: 8em;
+      height: 22px;
+      line-height: 24px;
+    }
+  }
+  .action {
+    width: 260px;
+  }
+}
+
+
+.action .icon-lajixiang {
+  padding: 0 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.operation {
+  padding: 50px 0 10px 20px;
+  font-size: 14px;
+  .pull-right {
+    margin: -10px 32px 0 0;
+  }
+  em {
+    font-weight: bold;
+    color: @color-primary;
+  }
+  .price {
+    display: inline-block;
+    margin-left: 20px;
+    color: @color-font-light;
+    span {
+      color: @color-primary;
+    }
+  }
+}
+
+.extra {
+  margin-top: 15px;
+  font-size: 14px;
+  .el-input {
+    width: 510px;
+    vertical-align: middle;
+  }
+}
+
+.empty-cart {
+  padding: 160px 0 230px 0;
+}
+
+.action-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  .container {
+    padding: 20px 15px;
+    background: rgba(221, 221, 221, 0.9);
+  }
+  .pull-right {
+    white-space: nowrap;
+    em {
+      font-size: 18px;
+      color: @color-primary;
+      i {
+        font-style: normal;
+        font-size: 12px;
+      }
+    }
+    .el-input-number {
+      width: 70px;
+    }
+  }
+}

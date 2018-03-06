@@ -1,0 +1,193 @@
+@import './variables.less';
+.category {
+  background:#f0f2f5;
+  border-bottom: none;
+  border-left: 1px solid #ededed;
+  border-right: 1px solid #ededed;
+  ul li {
+    display:inline-block;
+    line-height:46px;
+  }
+  ul li a {
+    display:block;
+    padding: 1px 40px;
+    font-size:12px;
+    font-weight: bold;
+    color: #232323;
+  }
+  ul li a.router-link-exact-active {
+    border-top: 5px solid @color-primary;
+    border-bottom: none;
+    background-color: #ffffff;
+    color: @color-primary;
+  }
+  ul li a:hover {
+    border-bottom: none;
+    color: @color-primary;
+  }
+  .statistic-date {
+    margin: 16px 75px 0 0;
+    font-size: 12px;
+  }
+}
+
+.filter-box {
+  border: 1px solid #ededed;
+  border-top: none;
+  .tabs {
+    width: 240px;
+    padding: 17px 0;
+    .frequency {
+      margin: 0 30px;
+      width: 58px;
+      height: 58px;
+      line-height: 58px;
+      line-height: 58px;
+      border: 2px solid #ededed;
+      font-size: 12px;
+      color: #232323;
+      font-weight: bold;
+      cursor: pointer;
+      &.active {
+        color: #ffffff;
+        background-color: @color-primary;
+        border-color: @color-primary;
+      }
+    }
+  }
+  .filter {
+    position: relative;
+    margin: 17px 0;
+    border-left: 2px solid #ededed;
+    .filter-toggle {
+      position: absolute;
+      right: -20px;
+      top: 22px;
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+  .trade-list {
+    width: 875px;
+    padding: 0 35px;
+    height: 80px;
+    overflow: hidden;
+    transition: height 0.2s;
+    margin-top: -18px;
+    &.showAllTrade {
+      height: 200px;
+    }
+    .trade {
+      width: 115px;
+      margin: 18px 0 0 0;
+
+    }
+  }
+}
+
+.table, .table-wrap {
+  background: #fff;
+}
+
+.table-wrap {
+  border: 1px solid #ededed;
+  margin-top: 46px;
+  margin-bottom: 30px;
+  .table {
+    width: 100%;
+    max-width: 100%;
+    thead tr {
+      margin-bottom: 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    thead tr th {
+      padding: 15px 30px;
+      font-weight: normal;
+      color: #8c8c8c;
+      font-size: 12px;
+      border-bottom: 0;
+    }
+
+    tbody tr:hover {
+      background-color: #f8f8f8;
+    }
+
+    tr td {
+      padding: 15px 0;
+      border-top: 1px dotted #eee;
+      font-size: 14px;
+    }
+    td.order {
+      width: 140px;
+      .iconfont {
+        display: block;
+        margin-top: -10px;
+        line-height: 1;
+        font-size: 32px;
+      }
+      div {
+        line-height: 1;
+        position: relative;
+        z-index: 0;
+        .crown {
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          z-index: -1;
+        }
+        .rank-text {
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: auto;
+          font-size: 14px;
+          color: #232323;
+        }
+      }
+    }
+    td .layer-fix {
+      width: 230px;
+      margin: 0 auto;
+      text-align: left;
+      .avatar {
+        margin-right: 10px;
+        width: 45px;
+        border: 1px solid #f8f8f8;
+      }
+      .ellipsis {
+        display: block;
+        max-width: 120px;
+        &:hover {
+          color: @color-primary;
+        }
+      }
+      .name {
+        display: inline-block;
+      }
+      .icon-comment {
+        width: 20px;
+      }
+      .icon-origin {
+        width: 21px;
+      }
+      .weibo-name {
+        display: inline-block;
+      }
+    }
+    td.actions {
+      width: 150px;
+    }
+  }
+
+  .table tr:first-child td {
+    border: 0;
+  }
+}
+.no-data {
+  padding: 80px;
+  font-size: 16px;
+}

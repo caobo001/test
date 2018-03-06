@@ -1,0 +1,119 @@
+@import './variables.less';
+.page-billboard-search {
+  font-size: 13px;
+  .container {
+    width: 1100px;
+  }
+  .toolbar {
+    padding: 40px 0 0 0;
+    .pull-left {
+      p {
+        font-size: 13px;
+        font-weight: bold;
+        em {
+          color: @color-primary;
+        }
+      }
+      .category {
+        padding: 0 45px 0 120px;
+        color: @color-primary;
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+  }
+  .list {
+    margin-top: 10px;
+    li {
+      a {
+        display: block;
+        overflow: hidden;
+        padding: 45px 20px;
+        border-bottom: 1px solid #f0f3f5;
+      }
+      &:hover {
+        a {
+          background: #f0f3f5;
+        }
+        .index {
+          visibility: visible;
+        }
+      }
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+    .index {
+      visibility: hidden;
+      margin: 45px 20px 0 0;
+      width: 80px;
+      height: 80px;
+      line-height: 80px;
+      text-align: center;
+      color: #fff;
+      font-size: 28px;
+      font-weight: bold;
+      background: #dcdcdc;
+    }
+    .avatar  {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .brief {
+      padding-left: 25px;
+      width: 600px;
+      .tag {
+        margin-right: 5px;
+        padding: 0 5px;
+        color: #fff;
+        background: @color-primary;
+      }
+      h2 {
+        font-size: 16px;
+        color: #666;
+        font-weight: normal;
+      }
+      p {
+        margin-top: 10px;
+        color: #666;
+      }
+      p em {
+        color: #999;
+      }
+    }
+  }
+  
+  .operate p {
+    margin-bottom: 15px;
+    color: #999;
+    em {
+      font-size: 26px;
+      color: @color-primary;
+    }
+  }
+  
+  .pagination {
+    margin: 30px 0;
+  }
+  .no-data {
+    padding: 80px 0 250px 0;
+    background: #fff;
+  }
+  
+
+  .search-block .el-input__icon {
+    right: initial;
+    left: 0;
+  }
+  .search-block .el-input__icon + .el-input__inner {
+    padding-right: 10px;
+    padding-left: 35px;
+  }
+  .search-box .el-input__inner {
+    height: 48px;
+    border-radius: 0;
+    box-sizing: border-box;
+  }
+
+}

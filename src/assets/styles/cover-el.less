@@ -1,0 +1,185 @@
+@import './variables.less';
+
+.el-picker-panel * {
+  box-sizing: content-box;
+}
+
+//button
+// 按钮统一为直角按钮
+.el-button {
+  border-radius: 0;
+}
+/*自定义的空心按钮*/
+.el-button-primary-hollow {
+  border-color: @color-hover;
+  color: @color-hover;
+}
+.el-button-primary-hollow:hover {
+  background-color: @color-hover;
+  color: @color-white;
+  border-color: @color-hover;
+}
+//text按钮
+.el-button--text {
+  color: @color-font;
+}
+.el-button--text:active,
+.el-button--text:focus {
+  color: @color-font;
+}
+.el-button--text:hover {
+  color: #0084d7;
+}
+.el-button--mini {
+  border-radius: 4px;
+}
+//自定义text按钮
+.el-button-blue-text {
+  color: #0084d7;
+}
+.el-button-blue-text:hover {
+  color: #00aaff;
+}
+//自定义取消按钮
+.el-button-cancel,
+.el-button-cancel:hover,
+.el-button-cancel:focus {
+  background-color: #999999;
+  border: 1px solid #999999;
+  color: @color-white;
+}
+.el-button-cancel:hover {
+  background-color: darken(#999999, 20%);
+}
+
+//select
+.el-select-dropdown__item.selected.hover {
+  background-color: @color-hover !important;
+}
+//dialog
+.el-dialog {
+  border-radius: 4px;
+  overflow: hidden;
+  .el-dialog__header {
+    padding: 10px 20px;
+    overflow: hidden;
+    background-color: @color-hover;
+    .el-dialog__title {
+      color: darken(@color-white, 5%);
+      font-weight: normal;
+    }
+    .el-dialog__headerbtn {
+      .el-dialog__close {
+        font-weight: bolder;
+        color: @color-white;
+      }
+    }
+  }
+  .el-dialog__footer {
+    text-align: center;
+    background-color: darken(@color-white, 4%);
+    padding: 20px;
+  }
+}
+// 覆盖 eleme 样式
+.el-popover {
+  min-width: auto !important;
+}
+
+.el-select-dropdown {
+  overflow: auto;
+}
+
+// 覆盖 tabs 样式
+.el-tabs {
+  .el-tabs__active-bar {
+    height: 2px;
+  }
+}
+
+// 覆盖 element pagination 分页样式
+.pagination {
+  height: 70px;
+  padding-top: 10px;
+  margin: 40px 0;
+  text-align: center;
+  .el-pagination {
+    .el-pager {
+      li {
+        width: 44px;
+        height: 44px;
+        line-height: 44px;
+        margin: 0 13px;
+        border: none;
+        background-color: @color-bg2;
+        color: #8b8b8b;
+        font-size: 14px;
+        transition: all 0.4s;
+        &.more {
+          background: none;
+        }
+        &.active {
+          width: 63px;
+          height: 63px;
+          line-height: 63px;
+          margin-top: -10px;
+          font-size: 24px;
+          background-color: @color-primary;
+          color: #ffffff;
+        }
+      }
+    }
+    .btn-prev, .btn-next, button.disabled {
+      width: 44px;
+      height: 44px;
+      background-color: @color-bg2;
+      color: #8b8b8b;
+      border: none;
+      .el-icon {
+        font-size: 18px;
+      }
+    }
+    .el-pagination__total, .el-pagination__jump {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+  }
+}
+/* 解决 date-picker 时间选择框超出问题 */
+.el-picker-panel * {
+  box-sizing: border-box;
+}
+/* input 统一变成直角 */
+.el-input__inner {
+  border-radius: 0;
+}
+
+/* 重写 el-checkbox 样式 */
+.el-checkbox__inner {
+  border-radius: 0;
+}
+.el-checkbox__input.is-focus .el-checkbox__inner {
+  border-color: #dcdcdc
+}
+.el-checkbox__input.is-checked .el-checkbox__inner {
+  border-color: @color-primary;
+  background-color: #ffffff;
+  &:after {
+    width: 8px;
+    height: 8px;
+    left: 0 !important;
+    right: 0 !important;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: @color-primary;
+    border: none;
+    transform: rotate(0deg) scaleY(1);
+    transition: none;
+  }
+}
+.el-checkbox__input .el-checkbox__inner:hover {
+  border-color: @color-primary;
+}
+
+

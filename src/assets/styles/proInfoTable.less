@@ -1,0 +1,72 @@
+@import "variables.less";
+.pro-info-table {
+  font-size: 14px;
+  margin-top: 5px;
+  thead {
+    background-color: @color-thead;
+    th {
+      color: #999999;
+      font-size: 14px;
+      text-align: center;
+      padding: 10px 0px;
+    }
+  }
+  tbody {
+    tr {
+      border: 1px solid @color-border;
+      td {
+        position: relative;
+        overflow: hidden;
+        padding: 15px 15px 24px 15px;
+        vertical-align: top;
+      }
+      .brief-td {
+        padding-left: 30px;
+      }
+      .see-copy-td {
+        width: 180px;
+        padding-right: 30px;
+      }
+    }
+  }
+}
+.pro-info-table .media {
+  width: 250px;
+  .media-left{
+    img {
+      width: 54px;
+      height: 54px;
+    }
+  }
+  .media-body {
+    .abstract {
+      max-width: 12em;
+      font-size: 12px;
+      color: #999999;
+      margin-top: 8px;
+    }
+  }
+}
+.bidden-label {
+  position: absolute;
+  left: -48px;
+  top: -24px;
+  width: 96px;
+  height: 48px;
+  background-color: @color-primary;
+  border-radius: 24px;
+  text-indent: 40px;
+  .text {
+    color: @color-white;
+    line-height: 5;
+  }
+}
+.see-copy {
+  position: relative;
+  padding: 0px;
+  .new {
+    position: absolute;
+    color: @color-hover;
+    width: 54px;
+  }
+}

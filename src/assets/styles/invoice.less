@@ -1,0 +1,129 @@
+@import './variables.less';
+.page-invoice {
+  background-color: @color-bg;
+  font-size: 14px;
+
+  .container-right {
+    width: @width-content-right;
+    .content {
+      padding: 10px 30px 30px 30px;
+      margin-top: 10px;
+      background-color: #fff;
+    }
+  }
+  .section {
+    padding-top: 30px;
+    // border-bottom: 1px solid lighten(@color-border, 4%);
+    h2 {
+      padding: 7px 0 7px 35px;
+      line-height: 1;
+      color: #333;
+      font-size: 14px;
+      font-weight: bold;
+      background-color: #f2f9fe;
+    }
+    .table {
+      margin: 10px auto;
+      width: 730px;
+    }
+    .el-gap {
+      padding: 20px 0px;
+      >span {
+        display: inline-block;
+        width: 100px;
+        color: @color-font-light;
+      }
+    }
+    .row {
+      padding: 16px 0;
+      // border-bottom: 1px solid lighten(@color-border, 6%);
+      >span {
+        display: inline-block;
+        width: 100px;
+        color: @color-font-light;
+      }
+      // &:last-child {
+      //   border-bottom: 0px;
+      // }
+    }
+  }
+
+  .attachment {
+    li {
+      position: relative;
+      display: inline-block;
+      margin-right: 30px;
+      // width: 85px;
+      text-align: center;
+    }
+    .img-box {
+      position: relative;
+      width: 85px;
+      height: 85px;
+      border: 1px dashed @color-border;
+      .iconfont {
+        display: block;
+        margin-top: 24px;
+        color: @color-border;
+        font-size: 24px;
+      }
+    }
+    .preview {
+      width: 85px;
+      height: 85px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 99;
+      img {
+        width: 100%;
+        max-height: 100%;
+      }
+      .operate {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding-right: 5px;
+        height: 20px;
+        line-height: 20px;
+        text-align: right;
+        color: #fff;
+        font-size: 12px;
+        background-color: rgba(0, 0, 0, .6);
+      }
+    }
+  }
+
+}
+
+.order-list-table {
+  width: 100%;
+  thead {
+    tr {
+      border: none;
+    }
+    th {
+      color: #999999;
+      text-align: center;
+      padding: 6px 0px;
+    }
+  }
+  tr {
+    border-top: 1px solid @color-border;
+    td {
+      padding: 25px 0px;
+      vertical-align: top;
+    }
+  }
+  .brief {
+    width: 220px;
+  }
+  .media {
+    width: 220px;
+    overflow: visible;
+    .ellipsis {
+      max-width: 110px;
+    }
+  }
+}

@@ -1,0 +1,287 @@
+@import 'variables.less';
+/*重写emele的样式 开始 */
+.el-button {
+	padding: 12px 24px;
+	border-radius: 20px;
+}
+.el-button--primary {
+	background-color: @color-hover;
+	border-color: @color-hover;
+}
+.el-button--primary:hover {
+	background-color: #fc560d;
+}
+/*重写emele的样式 结束 */
+
+.home-content {
+	font-size: 14px;
+}
+.operation-btn {
+	display: block;
+	margin: auto auto 5px auto;
+	border: 1px solid @color-border;
+	padding: 4px 5px;
+	box-shadow: 0px 0px 2px @color-border;
+	background-color: @color-white;
+	border-radius: 4px;
+}
+.pay-btn {
+	padding: 5px 10px;
+	background-color: @color-hover;
+	border-color: @color-hover;
+	color: #ffffff;
+	font-size: 12px;
+	border-radius: 15px;
+}
+.pay-btn:hover {
+	background-color: #fc560d;
+}
+/* account-block */
+.account-block {
+	width: 100%;
+	.el-col {
+		.grid-content {
+			background-color: #ffffff;
+			height: 236px;
+		}
+	}
+}
+.account-block .media {
+	position: relative;
+	padding: 50px 0px;
+	.media-left {
+		.username {
+			position: absolute;
+			width: 120px;
+			left: 40px;
+		}
+	}
+	.media-body {
+		width: 110px;
+		.el-progress, p {
+			width: 100px;
+			margin: auto;
+		}
+		p {
+			margin-top: 10px;
+		}
+		.el-button {
+			margin: 15px auto 5px auto;
+		}
+	}
+}
+.grid-content.second .wrapper {
+		width: 150px;
+		margin: auto;
+		padding: 30px 0px;
+		.item {
+			padding-left: 8px;
+		}
+		.item .iconfont {
+			font-size: 20px;
+			margin-right: 8px;
+		}
+		.item .num {
+			color: #ff002a;
+			text-indent: 5px;
+		}
+		.item.amount .iconfont {
+			color: @color-primary;
+		}
+		hr {
+			color: #c9c9c9;
+			margin: 30px auto;
+		}
+		.item.freeze .iconfont {
+			color: #93918f;
+		}
+}
+.grid-content.third {
+	.binding {
+		padding: 95px 0px;
+		.iconfont {
+			font-size: 25px;
+			margin-right: 5px;
+		}
+	}
+}
+.binding.bank .iconfont {
+	color: #4ccde9;
+}
+.binding.alipay .iconfont {
+	color: #f96a00;
+}
+/* todo-list 待办事项 */
+.todo-list, .latest-order-block {
+	width: 100%;
+	background-color: @color-white;
+	padding: 15px 0px 25px 0px;
+}
+.todo-list .wrapper, .latest-order-block .wrapper {
+	width: 960px;
+	margin: auto;
+}
+.to-list-in {
+	li {
+		border: 1px solid @color-border;
+		margin-top: -1px;
+		padding: 16px 0px;
+		.title {
+			width: 125px;
+			text-indent: 20px;
+		}
+		.item {
+			width: 185px;
+		}
+		.item .iconfont {
+			font-size: 16px;
+		}
+		.item .key {
+			color: #999999;
+			margin-right: 5px;
+		}
+	}
+}
+.todo-list .to-be-paid .iconfont {
+	color: #ff9e48;
+}
+.todo-list .to-be-choosen .iconfont {
+	color: #ff9e48;
+}
+.todo-list .to-be-confirmed .iconfont {
+	color: #e96464;
+}
+.todo-list .to-be-performed .iconfont {
+	color: #49c9bb;
+}
+.todo-list .to-be-commented .iconfont {
+	color: #38c0dd;
+}
+.todo-list .to-be-add .iconfont {
+	color: #5db5ee;
+}
+
+/* 最近订单 latest-order-block */
+.latest-order-block {
+	.no {
+		width: 160px;
+	}
+	.name {
+		width: 250px;
+	}
+	.price {
+		width: 180px;
+	}
+	.status {
+		width: 140px;
+	}
+}
+.title-line {
+	width: 100%;
+}
+.order-type {
+	border: 1px solid @color-border;
+	padding: 5px 8px;
+	margin-left: 10px;
+}
+.order-list {
+	width: 100%;
+	margin-top: 15px;
+}
+.thead-table {
+	width: 100%;
+	color: #999999;
+	border: 1px solid @color-border;
+	td {
+		padding: 5px 0px;
+	}
+}
+.order-table {
+	width: 100%;
+	border: 1px solid @color-border;
+	tr {
+		border: 1px solid @color-border;;
+	}
+	tr th {
+		padding: 12px 20px;
+		background-color: @color-thead;
+	}
+	tr td {
+		vertical-align: top;
+		padding: 25px 0px;
+	}
+}
+.order-table tr th .item {
+	margin-right: 20px;
+}
+.order-table .other-time {
+	font-size: 12px;
+	color: @color-primary;
+	border: 1px solid @color-primary;
+	background: none;
+	padding: 3px 12px;
+	border-radius: 15px;
+	margin-left: 3px;
+}
+.order-table .key {
+	color: #999999;
+}
+.order-table .wechat-icon,
+.order-table .weibo-icon {
+	font-size: 19px;
+	margin-right: 3px;
+}
+.order-table .wechat-icon {
+	color: #52cd52;
+}
+.order-table .weibo-icon {
+	color: #f13c19;
+}
+.order-table .detail-img,
+.order-table .wechat-name {
+	margin-left: 3px;
+}
+.order-table .pro-name,
+.order-table .wechat-name,
+.order-table .bid-name {
+	max-width: 10em;
+}
+.order-table .wechat-name,
+.order-table .deadline {
+	font-size: 12px;
+}
+.order-table .deadline {
+	color: #cd241b;
+}
+.order-table .media {
+	.media-left {
+		position: relative;
+		width: 54px;
+		height: 54px;
+		padding: 0px;
+		img {
+			max-width: 54px;
+			max-height: 54px;
+		}
+		.cn, .opacity {
+			position: absolute;
+			left: 0px;
+			bottom: 6px;
+			width: 100%;
+			height: 18px;
+			background-color: rgba(250, 29, 0, 0.85);
+		}
+		.cn {
+			font-size: 12px;
+			line-height: 18px;
+			color: @color-white;
+		}
+	}
+	.media-body {
+		padding-left: 5px;
+	}
+}
+.el-popover .qrcode-img {
+	width: 105px;
+	height: 105px;
+}
